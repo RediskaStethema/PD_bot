@@ -46,5 +46,6 @@
     "target": "ES2020",
     "esModuleInterop": true,
 
-  }
+  },
+  "exclude": ["node_modules", "**/*.d.ts"]
 }

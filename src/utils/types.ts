@@ -1,4 +1,3 @@
-
 export type CONSTANTS={
     token_bot: string,
 }
@@ -34,7 +33,10 @@ export type OpenMeteoGeoResponse= {
         admin2?: string;
     }[];
 }
-export type User= {
+export type User = {
     city: string;
-    dailySubscription?: boolean;
+    dailySubscription: boolean;
+    awaitingCity?: boolean;
+    requestCount?: number;
+    lastRequestDay?: string;
 }
